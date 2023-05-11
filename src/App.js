@@ -7,8 +7,8 @@ import Total from './components/total/total'
 class App extends Component {
   state = {
     items: [
-      {id:1, product:'Pen', price:2},
-      {id:2, product:'Book', price:10}
+      {id:1, product:'Pen', price:2,quantity:1},
+      {id:2, product:'Book', price:10,quantity:2}
     ]
   }
 
@@ -28,7 +28,7 @@ class App extends Component {
     items.push(item)
     this.setState({items: items})
   }
-
+  
   render() {
     return (
       <div className="container">
